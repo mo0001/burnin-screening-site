@@ -259,7 +259,7 @@ tr.hl td { background: var(--accent-weak); }
 .close-btn { border: 1px solid var(--line); background: var(--surface); color: var(--muted); border-radius: 8px; width: 32px; height: 32px; cursor: pointer; font-size: 18px; line-height: 1; }
 .close-btn:hover { color: var(--text); }
 .meta-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; }
-.meta-grid div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.meta-grid > div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
 .meta-grid .k { font-size: 0.72rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
 .meta-grid .v { font: 600 1rem var(--mono); font-variant-numeric: tabular-nums; }
 .bars { display: grid; gap: 7px; }
