@@ -7,7 +7,7 @@ const PAGES = {
   try: { title: "Try it", load: () => import("./pages/try.js") },
   about: { title: "About", load: () => import("./pages/about.js") },
 };
-const SITE = "Burn-in Anomaly Screening · Team CTRL + Win";
+const SITE = "BurnTestr · Team CTRL + Win";
 
 export function parseHash() {
   const raw = location.hash.replace(/^#\/?/, "");

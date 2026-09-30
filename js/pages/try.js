@@ -26,7 +26,7 @@ export async function render(app) {
   app.innerHTML = `
   <section class="wrap section-tight">
     <span class="eyebrow">Try it · runs in your browser</span>
-    <h1 style="font-size:clamp(1.8rem,3.5vw,2.4rem)">Screen your own burn-in data</h1>
+    <h1 style="font-size:clamp(1.8rem,3.5vw,2.4rem)">Try BurnTestr on your CSV</h1>
     <p class="lead">Upload a CSV or load the sample. Nothing leaves your browser.</p>
     <div class="notice" style="margin:18px 0 24px;max-width:52rem">
       <b>This is a simplified, client-side Module A.</b> It computes per-lot robust DPAT limits (median ± k·IQR/1.35, log scale for currents), robust z-scores, change from 0 h, a lot drift-slope check (lot median slope + k·robust σ) and datasheet / delta checks. The full ML system (per-lot Mahalanobis, Isolation Forest, the Module B drift forecaster, cost-tuned thresholds and SHAP explanations) runs in Python and is not included here.

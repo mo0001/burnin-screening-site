@@ -1,8 +1,6 @@
 import { loadJSON, pct } from "../util.js";
 import { log, mount } from "../svg.js";
 
-const PRIVATE_REPO = "https://github.com/viasalusproducts/SIH-26170-burnin-anomaly-detection";
-
 const ICONS = {
   a: `<svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="14" cy="20" r="9" stroke-dasharray="2.5 2.5"/><circle cx="11" cy="18" r="1.3" fill="currentColor"/><circle cx="16" cy="22" r="1.3" fill="currentColor"/><circle cx="13" cy="24" r="1.3" fill="currentColor"/><circle cx="17" cy="16" r="1.3" fill="currentColor"/><circle cx="29" cy="8" r="2.2"/><path d="m22 13 4.5-3.5"/></svg>`,
   b: `<svg viewBox="0 0 36 36" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 30h28M4 30V5"/><path d="M6 26c5-2 8-5 11-9"/><path d="M17 17c3-4 7-8 13-10" stroke-dasharray="2.5 2.5"/><path d="M6 12h26" opacity=".55"/><circle cx="17" cy="17" r="1.6" fill="currentColor"/></svg>`,
@@ -63,9 +61,10 @@ export async function render(app) {
 
   app.innerHTML = `
   <section class="hero wrap">
-    <div class="team"><strong>Team CTRL + Win</strong> · Smart India Hackathon · Problem Statement 26170 · ISRO</div>
+    <div class="team"><strong>BurnTestr</strong> · Team CTRL + Win (Team ID 124241) · Smart India Hackathon · Problem Statement 26170 · ISRO</div>
     <h1>Catch latent defects in burn-in before they fly.</h1>
-    <p class="lead">AI-driven anomaly detection for component burn-in &amp; screening: every part is judged against its own lot and its own drift, not just the datasheet, and every decision comes with an explanation a QA inspector can audit.</p>
+    <p class="tagline">Lot-aware burn-in screening that flags components likely to fail later.</p>
+    <p class="lead">Every part is judged against its own lot and its own drift, not just the datasheet, and every decision comes with an explanation a QA inspector can audit.</p>
     <div class="row" style="margin-top:26px">
       <a class="btn btn-primary" href="#/explorer">Explore the test lots</a>
       <a class="btn" href="#/try">Try it on your CSV</a>
@@ -123,9 +122,9 @@ export async function render(app) {
     <div class="grid g2">
       <div>
         <span class="eyebrow">Project</span>
-        <h2>Team CTRL + Win</h2>
-        <p class="muted">Smart India Hackathon · Problem Statement 26170 · ISRO<br>“AI-Driven Anomaly Detection in Component Burn-In &amp; Screening”</p>
-        <p class="small">Source code: <a href="${PRIVATE_REPO}" rel="noopener">viasalusproducts/SIH-26170-burnin-anomaly-detection</a> <span class="chip">private repository</span><br><span class="muted">The ML system (Python) lives in a private repo. This site only contains exported results on synthetic data.</span></p>
+        <h2>BurnTestr</h2>
+        <p class="muted"><strong>Team CTRL + Win</strong> (Team ID 124241) · Smart India Hackathon · Problem Statement 26170 · ISRO / Department of Space<br>“AI-Driven Anomaly Detection in Component Burn-In &amp; Screening” · Smart Automation · Software</p>
+        <p class="small muted">Source code available to evaluators on request. This site only contains exported results on synthetic data, selected figures and browser visualisation.</p>
       </div>
       <div class="callout">
         <strong>What you can do here</strong>

@@ -3,16 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Burn-in Anomaly Screening · Team CTRL + Win · SIH 26170 (ISRO)</title>
-  <meta name="description" content="AI-driven anomaly detection for component burn-in and screening. Lot-relative outlier detection, 24 h drift forecasting and explainable ACCEPT / REVIEW / REJECT decisions. Team CTRL + Win, Smart India Hackathon problem 26170 (ISRO).">
+  <title>BurnTestr · Team CTRL + Win · SIH 26170 (ISRO)</title>
+  <meta name="description" content="BurnTestr — lot-aware burn-in screening that flags components likely to fail later. Team CTRL + Win (Team ID 124241), Smart India Hackathon 26170, ISRO / Department of Space.">
   <meta name="theme-color" content="#fbfbfa" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0e1014" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Burn-in Anomaly Screening · Team CTRL + Win · SIH 26170">
-  <meta property="og:description" content="A part at 45 µA in a 10 µA lot passes the 50 µA datasheet limit, and we catch it. 93.8% recall vs 43.8% for static rules, with an explanation for every rejection.">
+  <meta property="og:title" content="BurnTestr · Team CTRL + Win · SIH 26170">
+  <meta property="og:description" content="Lot-aware burn-in screening that flags components likely to fail later. A part at 45 µA in a 10 µA lot passes the 50 µA datasheet limit — and BurnTestr catches it. 93.8% recall vs 43.8% for static rules.">
   <meta property="og:image" content="https://mo0001.github.io/burnin-screening-site/img/fig/01_static_vs_dynamic_limits.png">
   <meta property="og:url" content="https://mo0001.github.io/burnin-screening-site/">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BurnTestr · Team CTRL + Win · SIH 26170">
+  <meta name="twitter:description" content="Lot-aware burn-in screening that flags components likely to fail later.">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,9 +32,15 @@
   <a class="skip" href="#app">Skip to content</a>
   <header class="site-header">
     <div class="wrap header-inner">
-      <a class="brand" href="#/" aria-label="Burn-in Screening home">
-        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M6.5 15.5 10 12l2.5 2.5L17.5 8" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Burn-in Screening</span>
+      <a class="brand" href="#/" aria-label="BurnTestr home">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="21" height="21" rx="5" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <rect x="7" y="8" width="10" height="8.5" rx="1.2" fill="none" stroke="currentColor" stroke-width="1.35"/>
+          <path d="M9.2 8V6.2M12 8V6.2M14.8 8V6.2M9.2 16.5v1.8M12 16.5v1.8M14.8 16.5v1.8" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+          <path d="M8.2 14.2c1.6-.2 2.6-1.6 3.8-3.1 1-1.3 2-2.6 3.9-2.8" fill="none" stroke="var(--review)" stroke-width="1.7" stroke-linecap="round"/>
+          <circle cx="16" cy="8.3" r="1.45" fill="var(--ok)"/>
+        </svg>
+        <span>BurnTestr</span>
       </a>
       <nav class="nav" aria-label="Main">
         <a href="#/" data-route="">Home</a>
@@ -54,8 +62,8 @@
 
   <footer class="site-footer">
     <div class="wrap footer-inner">
-      <p><strong>Team CTRL + Win</strong> · Smart India Hackathon · Problem Statement 26170 · ISRO</p>
-      <p class="muted">All part data shown is synthetic. Figures and metrics are from held-out test lots. Source code is in a private repository.</p>
+      <p><strong>BurnTestr</strong> · <strong>Team CTRL + Win</strong> (Team ID 124241) · Smart India Hackathon · Problem Statement 26170 · ISRO / Department of Space</p>
+      <p class="muted">All part data shown is synthetic. Figures and metrics are from held-out test lots. Source code available to evaluators on request.</p>
     </div>
   </footer>
 </body>
